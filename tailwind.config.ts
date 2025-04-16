@@ -18,12 +18,27 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				poppins: ['Poppins', 'sans-serif'],
+				inter: ['Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				navy: {
+					DEFAULT: '#0A192F',
+					light: '#112240',
+					dark: '#020c1b'
+				},
+				slate: {
+					light: '#ccd6f6',
+					DEFAULT: '#8892b0',
+					dark: '#495670'
+				},
+				gold: '#e6c07b',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
