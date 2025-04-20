@@ -1,4 +1,3 @@
-
 import { Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import SocialLinks from "./SocialLinks";
@@ -14,17 +13,17 @@ interface ContactItemProps {
 
 const ContactItem = ({ icon, title, content, link }: ContactItemProps) => (
   <div className="flex items-start mb-6">
-    <div className="p-3 rounded-full bg-gold/10 mr-4">
+    <div className="p-3 rounded-full bg-lavender/10 mr-4">
       {icon}
     </div>
     <div>
-      <h3 className="font-poppins font-semibold text-slate-light">{title}</h3>
+      <h3 className="font-poppins font-semibold text-rose">{title}</h3>
       {link ? (
-        <a href={link} className="text-slate hover:text-gold transition-colors">
+        <a href={link} className="text-navy-light dark:text-slate hover:text-lavender transition-colors">
           {content}
         </a>
       ) : (
-        <p className="text-slate">{content}</p>
+        <p className="text-navy-light dark:text-slate">{content}</p>
       )}
     </div>
   </div>
@@ -32,13 +31,13 @@ const ContactItem = ({ icon, title, content, link }: ContactItemProps) => (
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-navy-dark/30">
+    <section id="contact" className="py-20">
       <div className="container px-4 mx-auto">
         <div className="flex items-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold font-poppins text-slate-light">
-            <span className="text-gold font-mono mr-2">05.</span>Contact
+          <h2 className="text-2xl md:text-3xl font-bold font-poppins text-rose">
+            <span className="text-lavender font-mono mr-2">05.</span>Contact
           </h2>
-          <div className="ml-4 h-px bg-slate-dark flex-1" />
+          <div className="ml-4 h-px bg-lavender/30 flex-1" />
         </div>
         
         <div className="grid md:grid-cols-2 gap-10">
@@ -71,8 +70,8 @@ export default function Contact() {
             </div>
           </div>
           
-          <div className="bg-navy-light p-6 rounded-lg">
-            <h3 className="text-xl font-poppins font-semibold text-slate-light mb-6">Send a Message</h3>
+          <div className="bg-rose/10 p-6 rounded-lg border border-lavender/20">
+            <h3 className="text-xl font-poppins font-semibold text-rose mb-6">Send a Message</h3>
             
             <form>
               <div className="mb-4">
@@ -107,7 +106,7 @@ export default function Contact() {
               
               <Button
                 type="submit"
-                className="bg-gold/10 hover:bg-gold/20 text-gold border border-gold"
+                className="bg-lavender/10 hover:bg-lavender/20 text-lavender border border-lavender"
               >
                 Send Message
               </Button>

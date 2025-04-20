@@ -10,16 +10,16 @@ interface ExperienceItemProps {
 }
 
 const ExperienceItem = ({ title, company, date, description }: ExperienceItemProps) => (
-  <Card className="bg-navy-light border-none mb-6">
+  <Card className="bg-rose/10 border-lavender/20 mb-6">
     <CardContent className="pt-6">
       <div className="flex justify-between items-start mb-2">
         <div>
-          <h3 className="font-poppins font-semibold text-xl text-slate-light">
+          <h3 className="font-poppins font-semibold text-xl text-rose">
             {title}
           </h3>
-          <p className="text-gold">{company}</p>
+          <p className="text-lavender">{company}</p>
         </div>
-        <div className="flex items-center text-slate text-sm">
+        <div className="flex items-center text-navy-light dark:text-slate text-sm">
           <Calendar size={14} className="mr-1" />
           {date}
         </div>
@@ -27,8 +27,8 @@ const ExperienceItem = ({ title, company, date, description }: ExperienceItemPro
       
       <ul className="mt-4 space-y-2">
         {description.map((item, index) => (
-          <li key={index} className="text-slate flex">
-            <span className="text-gold mr-2">▹</span>
+          <li key={index} className="text-navy-light dark:text-slate flex">
+            <span className="text-lavender mr-2">▹</span>
             <span>{item}</span>
           </li>
         ))}
@@ -64,13 +64,13 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-20">
+    <section id="experience" className="py-20 bg-cream-light dark:bg-navy-dark">
       <div className="container px-4 mx-auto">
         <div className="flex items-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold font-poppins text-slate-light">
-            <span className="text-gold font-mono mr-2">02.</span>Experience
+          <h2 className="text-2xl md:text-3xl font-bold font-poppins text-rose">
+            <span className="text-lavender font-mono mr-2">02.</span>Experience
           </h2>
-          <div className="ml-4 h-px bg-slate-dark flex-1" />
+          <div className="ml-4 h-px bg-lavender/30 flex-1" />
         </div>
         
         <div className="max-w-3xl mx-auto">

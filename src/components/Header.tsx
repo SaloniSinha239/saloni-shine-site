@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -30,10 +29,10 @@ export default function Header() {
   }, [scrolled]);
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-navy/95 shadow-md py-3' : 'bg-transparent py-5'}`}>
+    <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-cream/95 dark:bg-navy/95 shadow-md py-3' : 'bg-transparent py-5'}`}>
       <div className="container px-4 mx-auto flex justify-between items-center">
         <a href="#" className="flex items-center">
-          <div className="font-poppins font-bold text-2xl text-gold">SS</div>
+          <div className="font-poppins font-bold text-2xl text-lavender">SS</div>
           <span className="sr-only">Saloni Sinha</span>
         </a>
 
@@ -44,15 +43,15 @@ export default function Header() {
               <li key={item.name}>
                 <a 
                   href={item.href}
-                  className="text-slate-light hover:text-gold transition-colors font-inter font-medium relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-gold hover:after:w-full after:transition-all"
+                  className="text-navy-light dark:text-slate hover:text-lavender transition-colors font-inter font-medium relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-lavender hover:after:w-full after:transition-all"
                 >
-                  <span className="text-gold mr-1 text-sm">{`0${i + 1}.`}</span>
+                  <span className="text-lavender mr-1 text-sm">{`0${i + 1}.`}</span>
                   {item.name}
                 </a>
               </li>
             ))}
           </ul>
-          <Button variant="outline" className="border-gold text-gold hover:bg-gold/10">
+          <Button variant="outline" className="border-lavender text-lavender hover:bg-lavender/10">
             Resume
           </Button>
         </nav>

@@ -8,12 +8,12 @@ interface SkillCategoryProps {
 
 const SkillCategory = ({ title, skills }: SkillCategoryProps) => (
   <div className="mb-8">
-    <h3 className="text-xl font-poppins font-semibold text-slate-light mb-4">{title}</h3>
+    <h3 className="text-xl font-poppins font-semibold text-rose mb-4">{title}</h3>
     <div className="flex flex-wrap gap-2">
       {skills.map((skill, index) => (
         <Badge 
           key={index} 
-          className="bg-navy-light text-slate-light hover:bg-navy-light/80 border border-gold/30 px-3 py-1"
+          className="bg-rose/10 text-lavender hover:bg-rose/20 border border-lavender/30 px-3 py-1"
         >
           {skill}
         </Badge>
@@ -43,13 +43,13 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-20">
+    <section id="skills" className="py-20 bg-cream-light dark:bg-navy-dark">
       <div className="container px-4 mx-auto">
         <div className="flex items-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold font-poppins text-slate-light">
-            <span className="text-gold font-mono mr-2">04.</span>Skills
+          <h2 className="text-2xl md:text-3xl font-bold font-poppins text-rose">
+            <span className="text-lavender font-mono mr-2">04.</span>Skills
           </h2>
-          <div className="ml-4 h-px bg-slate-dark flex-1" />
+          <div className="ml-4 h-px bg-lavender/30 flex-1" />
         </div>
         
         <div className="grid md:grid-cols-2 gap-6">
