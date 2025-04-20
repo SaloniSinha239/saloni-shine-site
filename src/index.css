@@ -90,6 +90,18 @@
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+
+  :root {
+    --lavender: 277 40% 75%;
+    --cream: 39 100% 96%;
+    --rose: 343 40% 85%;
+  }
+
+  .dark {
+    --lavender: 277 40% 45%;
+    --cream: 39 100% 76%;
+    --rose: 343 40% 55%;
+  }
 }
 
 @layer base {
